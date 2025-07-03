@@ -1,6 +1,6 @@
 # Modelo de Domínio
 
-Descrição e imagem do diagrama de classes de domínio...
+![Modelo de Domínio - versão 1.0](dominio_v1.png)
 
 ## Glossário (sugestão)
 
