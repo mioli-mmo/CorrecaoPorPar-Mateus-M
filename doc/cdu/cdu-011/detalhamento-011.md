@@ -37,11 +37,11 @@
 
 ### Sequência - Etapa 1
 
-Em construção...
+![Etapa 1 do diagrama de sequência](./etapa%201.png)
 
 ### Sequência - Etapa 2
 
-Em construção...
+![Etapa 2 do diagrama de sequência](./etapa%202.png)
 
 ## Diagrama de Classes de Projeto
 
