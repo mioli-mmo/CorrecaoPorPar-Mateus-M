@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <title>App CPP</title>
+    </head>
+    <body>
+        <h1>Aplicação CorreçãoPorPar</h1>
+        <h2>Avaliação da Resposta de um Aluno</h2>
+        <h3>Diagrama Submetido como Resposta</h3>
+        <img src="{{ resposta.diagrama.url }}" alt="diagrama"/>
+        {{ resposta.observacao }}
+        <hr/>
+        <form method="post" action="{% url 'cpp:avalia' resposta.id %}">
+            {% csrf_token %}
+            Qual a sua nota para o diagrama (0-100):
+            <input type="number" name="nota" required/><br/>
+            Comentários:<br/>
+            <textarea name="comentarios">
+                Informe aqui os motivos para a nota atribuída...
+            </textarea>
+        </form>
+    </body>
+</html>

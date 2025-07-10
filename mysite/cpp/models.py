@@ -95,6 +95,8 @@ class Resposta(models.Model):
     observacao = models.CharField(max_length=200)
     avaliacao = models.ForeignKey(Avaliacao, on_delete=models.CASCADE)
     aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)
-    correcao = models.OneToOneField(Correcao, on_delete=models.CASCADE)
+    correcao = models.OneToOneField(
+        Correcao, on_delete=models.CASCADE, null=True, blank=True
+    )
     def __str__(self):
         return "Resposta ({})".format(self.id)
