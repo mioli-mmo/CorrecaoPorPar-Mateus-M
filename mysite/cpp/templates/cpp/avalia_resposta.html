@@ -6,6 +6,9 @@
     <body>
         <h1>Aplicação CorreçãoPorPar</h1>
         <h2>Avaliação da Resposta de um Aluno</h2>
+        {% if user.is_authenticated %}
+            <h3>Bem vindo, usuário {{ user.username }}</h3>
+        {% endif %}
         <p>
             <u>Diagrama submetido por um colega</u>:<br/>
             <img src="{{ resposta.diagrama.url }}" alt="diagrama"/>
@@ -20,7 +23,7 @@
             <p>Qual a sua nota para o diagrama (0-100):
             <input type="number" name="nota" required/></p>
             <p>Comentários:<br/>
-            <textarea name="comentarios" cols="60">Informe aqui os motivos para a nota atribuída...
+            <textarea name="comentario" cols="60">Informe aqui os motivos para a nota atribuída...
             </textarea></p>
             <p><input type="submit" value="Registrar a Avaliação"/></p>
         </form>
