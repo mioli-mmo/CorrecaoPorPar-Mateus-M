@@ -45,4 +45,4 @@
 
 ## Diagrama de Classes de Projeto
 
-> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+![Diagrama de Classes de Projeto para o CDU 011](./imagens/CDU011%20-%20Classes%20de%20Projeto.png)
